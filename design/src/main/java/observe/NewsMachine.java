@@ -30,6 +30,10 @@ public class NewsMachine implements Publisher {
 	}
 
 	@Override
+	public void notifySpecificObserver(Observer observer) {
+		observer.update(title, news);
+	}
+
 	public void setNews(String title, String news) {
 		this.title = title;
 		this.news = news;

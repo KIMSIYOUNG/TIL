@@ -7,5 +7,5 @@ public interface Publisher {
 
 	void notifyInfo();
 
-	void setNews(String title, String news);
+	void notifySpecificObserver(Observer observer);
 }
