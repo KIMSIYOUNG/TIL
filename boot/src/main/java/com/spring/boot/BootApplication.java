@@ -10,6 +10,5 @@ public class BootApplication {
 		SpringApplication app = new SpringApplication(BootApplication.class);
 		app.run(args);
 	}
-
 }
 
