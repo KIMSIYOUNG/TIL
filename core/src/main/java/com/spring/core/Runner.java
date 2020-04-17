@@ -3,17 +3,17 @@ package com.spring.core;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.core.convert.ConversionService;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Runner implements ApplicationRunner {
 
 	@Autowired
-	ConversionService service;
+	EventService service;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println(service.getClass().toString());
+		service.create();
+		service.delete();
 	}
 }
