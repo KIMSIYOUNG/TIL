@@ -1,6 +1,6 @@
 package com.spring.boot;
 
-import static org.mockito.Mockito.*;
+import static org.hamcrest.Matchers.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -8,26 +8,26 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(SampleController.class)
-public class SampleControllerSlicingTest {
+@WebMvcTest(UserController.class)
+public class UserControllerTest {
 
 	@Autowired
 	MockMvc mockMvc;
 
-	@MockBean
-	SampleService sampleService;
-
 	@Test
-	public void helloTest() throws Exception {
-		when(sampleService.getName()).thenReturn("kyle");
-
-		mockMvc.perform(get("/hello"))
+	public void create() throws Exception {
+		String user = "{\"userName\":\"kyle\", \"password\":\"123\"}";
+		mockMvc.perform(post("/user/create")
+			.contentType(MediaType.APPLICATION_JSON)
+			.accept(MediaType.APPLICATION_JSON)
+			.content(user))
 			.andExpect(status().isOk())
-			.andExpect(content().string("hellokyle"));
+			.andExpect(jsonPath("$.userName", is(equalTo("kyle"))))
+			.andExpect(jsonPath("$.password", is(equalTo("123"))));
 	}
 }
