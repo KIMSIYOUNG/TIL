@@ -1,13 +1,13 @@
-package com.spring.boot;
+package com.spring.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BootApplication {
+public class JpaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootApplication.class, args);
+		SpringApplication.run(JpaApplication.class, args);
 	}
-}
 
+}

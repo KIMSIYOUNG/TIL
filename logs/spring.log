@@ -1,0 +1,15 @@
+2020-04-18 01:28:35.033  INFO 46533 --- [main] com.spring.boot.BootApplication          : Starting BootApplication on gimsiyeong-ui-MacBookPro.local with PID 46533 (/Users/kimsiyoung/IdeaProjects/TIL0409/boot/target/classes started by kimsiyoung in /Users/kimsiyoung/IdeaProjects/TIL0409)
+2020-04-18 01:28:35.039 DEBUG 46533 --- [main] com.spring.boot.BootApplication          : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-18 01:28:35.043  INFO 46533 --- [main] com.spring.boot.BootApplication          : No active profile set, falling back to default profiles: default
+2020-04-18 01:28:36.343  INFO 46533 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-18 01:28:36.358  INFO 46533 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-18 01:28:36.363  INFO 46533 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-18 01:28:36.469  INFO 46533 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-18 01:28:36.469  INFO 46533 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1355 ms
+2020-04-18 01:28:36.628  INFO 46533 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-18 01:28:36.912  INFO 46533 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-18 01:28:36.916  INFO 46533 --- [main] com.spring.boot.BootApplication          : Started BootApplication in 2.424 seconds (JVM running for 3.2)
+2020-04-18 01:28:39.470  INFO 46533 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-18 01:28:39.471  INFO 46533 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-18 01:28:39.475  INFO 46533 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-04-18 12:38:02.238  INFO 46533 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

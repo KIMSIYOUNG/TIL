@@ -1,3 +1,4 @@
 rootProject.name = 'TIL0409'
 include 'design'
+include 'com.spring.jpa'
 
