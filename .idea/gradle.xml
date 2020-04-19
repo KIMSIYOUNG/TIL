@@ -30,6 +30,17 @@
         </option>
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/security" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.0.1/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/security" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
