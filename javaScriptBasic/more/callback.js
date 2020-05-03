@@ -25,3 +25,26 @@ promise.then(
 );
 
 promise.then(script => alert('또다른 핸들러...'));
+
+
+let promise = new Promise(function (resolve, reject) {
+  setTimeout(() => resolve(1), 1000);
+});
+
+promise.then(function (result) {
+  console.log("저는 첫번째 입니다.");
+  alert(result); // 1
+  return result * 2;
+});
+
+promise.then(function (result) {
+  console.log("저는 두번째 입니다.");
+  alert(result); // 1
+  return result * 2;
+});
+
+promise.then(function (result) {
+  console.log("저는 세번째 입니다.");
+  alert(result); // 1
+  return result * 2;
+});

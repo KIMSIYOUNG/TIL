@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <button type ="button" @click="add">더하기</button>
+  {{counter}}
+
+  <input type="text" @keyup = "keyUp">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data:{
+        counter : 0
+    },
+    methods: {
+      add() {
+        console.log(this.counter);
+        this.counter ++;
+      },
+      keyUp(event) {
+        if(event.keyCode !== 13) {
+          console.log("엔터키가 아님.");
+          return;
+        }
+        console.log("엔터키 눌렸다.");
+      }
+    }
+  })
+</script>
+</body>
+</html>
